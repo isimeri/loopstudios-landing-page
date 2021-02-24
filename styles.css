@@ -18,7 +18,7 @@ h1.header{
     font-size: 4rem;
 }
 h2.header{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h3.header{
     font-size: 1.7rem;
@@ -28,7 +28,7 @@ h3.header{
 .section1-inner-container,
 .section2-inner-container,
 .footer-inner-container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -36,8 +36,9 @@ header{
     background-image: url("./images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 700px;
     padding-top: 60px;
+    margin-bottom: 100px;
 }
 .header-inner-container{
     height: 70%;
@@ -68,8 +69,39 @@ header{
     width: 80%;
     color: white;
 }
-
-
+.section1{
+    margin-bottom: 100px;
+}
+.section1-inner-container{
+    display: flex;
+    position: relative;
+}
+.section1-img-container{
+    width: min(800px,70%);
+}
+.section1-img-container .desktop{
+    width: 100%;
+}
+.section1-text-container{
+    width: max(50%, 600px);
+    height: 450px;
+    background-color: white;
+    padding-left: min(5vw, 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 45%;
+    top: 150px;
+}
+.section1-text-container .header{
+    margin-bottom: 30px;
+}
+.section1-text{
+    line-height: 2;
+    color: hsl(0, 0%, 55%);
+}
 /* .nav a::after{
     content: "";
     position: absolute;
@@ -89,17 +121,15 @@ header{
 
 .creations-grid{
     display: grid;
-    grid-template-columns: repeat(4, 256px);
-    grid-template-rows: repeat(2, 450px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 560px);
     row-gap: 30px;
     column-gap: 30px;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     margin-bottom: 100px;
 }
 .grid-item{
-    height: 450px;
-    width: 256px;
     color: white;
 }
 .grid-item-inner{
@@ -123,27 +153,35 @@ header{
 }
 .arcade{
     background-image: url("./images/desktop/image-night-arcade.jpg");
+    background-size: cover;
 }
 .soccer{
     background-image: url("./images/desktop/image-soccer-team.jpg");
+    background-size: cover;
 }
 .deep-earth{
     background-image: url("./images/desktop/image-deep-earth.jpg");
+    background-size: cover;
 }
 .the-grid{
     background-image: url("./images/desktop/image-grid.jpg");
+    background-size: cover;
 }
 .from-above{
     background-image: url("./images/desktop/image-from-above.jpg");
+    background-size: cover;
 }
 .borealis{
     background-image: url("./images/desktop/image-pocket-borealis.jpg");
+    background-size: cover;
 }
 .curiosity{
     background-image: url("./images/desktop/image-curiosity.jpg");
+    background-size: cover;
 }
 .fisheye{
-    background-image: url("./images/desktop/image-fisheye.jpg");    
+    background-image: url("./images/desktop/image-fisheye.jpg");  
+    background-size: cover;  
 }
 
 
@@ -197,7 +235,7 @@ footer{
 }
 
 
-.desktop{
+.mobile{
     display:none;
 }
 
@@ -216,4 +254,8 @@ footer{
     height: 2px;
     color: white;
     background-color: white;
+}
+
+@media all and (max-width: 1300px){
+    
 }
