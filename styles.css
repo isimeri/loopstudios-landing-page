@@ -70,7 +70,7 @@ header{
     color: white;
 }
 .section1{
-    margin-bottom: 100px;
+    margin-bottom: 300px;
 }
 .section1-inner-container{
     display: flex;
@@ -118,6 +118,33 @@ header{
     color: white;
     background-color: white;
 } */
+.section2{
+    margin-bottom: 200px;
+}
+.section2-header-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.section2-button{
+    background-color: white;
+    border: 2px solid hsl(0, 0%, 41%);
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    font-family: "Alata", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+.section2-button:hover{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 
 .creations-grid{
     display: grid;
@@ -127,7 +154,6 @@ header{
     column-gap: 30px;
     align-content: center;
     justify-content: center;
-    margin-bottom: 100px;
 }
 .grid-item{
     color: white;
